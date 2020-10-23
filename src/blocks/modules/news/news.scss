@@ -1,0 +1,596 @@
+.news-page {
+  &.main-content {
+    .main-news {
+      margin-bottom: 12px;
+      @include media("medium") {
+        margin-bottom: 48px;
+      }
+      @include media("large") {
+        margin-bottom: 72px;
+      }
+      .container {
+        border: 1px solid #e6e6e6;
+        border-radius: 6px;
+        overflow: hidden;
+      }
+      .main-news_img__custom {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      .main-news_content {
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 12px;
+        @include media("medium") {
+          padding-left: 24px;
+          padding-right: 24px;
+          padding-top: 24px;
+        }
+        @include media("large") {
+          padding-left: 48px;
+          padding-right: 48px;
+          padding-top: 48px;
+        }
+        .news-tags {
+          justify-content: center;
+          margin-bottom: 12px;
+          flex-direction: row-reverse;
+          @include media("medium") {
+            margin-bottom: 44px;
+          }
+        }
+        h2 {
+          margin-bottom: 12px;
+          font-weight: 600;
+          font-size: 22px;
+          line-height: 25px;
+          @include media("medium") {
+            margin-bottom: 16px;
+          }
+        }
+        p {
+          font-size: 17px;
+          line-height: 20px;
+          color: #666666;
+          margin-bottom: 12px;
+          @include media("medium") {
+            font-size: 20px;
+            line-height: 24px;
+          }
+        }
+        .more-news {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 12px;
+          transition: 0.3s;
+          flex-direction: row-reverse;
+          @include media("medium") {
+            margin-bottom: 44px;
+          }
+          span {
+            margin-right: 8px;
+            transform: rotate(180deg);
+          }
+        }
+        .news-info {
+          justify-content: center;
+          margin-bottom: 12px;
+          flex-direction: row-reverse;
+          .date {
+            margin-left: 16px;
+          }
+        }
+      }
+    }
+    .our-news {
+      .page-pagination_list {
+        li {
+          a {
+            i {
+              transform: rotate(0);
+            }
+          }
+        }
+      }
+      h4 {
+        text-align: right;
+      }
+      .choose-region_wrapp {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        align-items: flex-end;
+        @include media("large") {
+          flex-direction: row;
+          align-items: center;
+        }
+        h4 {
+          margin-left: 6px;
+          text-align: right;
+        }
+      }
+    }
+    .news-item_link {
+      border: 1px solid #e6e6e6;
+      border-radius: 6px;
+      transition: 0.3s;
+      margin-bottom: 24px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      overflow: hidden;
+      @include media("medium") {
+        margin-bottom: 48px;
+      }
+      &:hover {
+        border-color: $bgbutton;
+      }
+    }
+    .news-item_wrapp {
+      align-self: stretch;
+      padding: 12px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+      @include media("xlarge") {
+        padding: 24px 48px;
+      }
+    }
+    .news-tags {
+      display: flex;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+      flex-direction: row-reverse;
+      li {
+        border: 1px solid #e6e6e6;
+        border-radius: 3px;
+        color: $bgbutton;
+        padding: 4px 8px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        margin-left: 4px;
+        margin-bottom: 4px;
+      }
+    }
+    .news-title {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 27px;
+      color: #000000;
+      @include media("medium") {
+        font-size: 24px;
+        line-height: 32px;
+      }
+    }
+    .news-desc {
+      margin-bottom: 8px;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: #666666;
+      @include media("medium") {
+        margin-bottom: 16px;
+      }
+    }
+    .date,
+    .views {
+      font-size: 16px;
+      line-height: 24px;
+      color: #a6a6a6;
+    }
+    .news-info {
+      display: flex;
+      justify-content: space-between;
+      margin-top: auto;
+      flex-direction: row-reverse;
+    }
+    .slider-nav {
+      list-style-type: none;
+      li {
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        cursor: pointer;
+        transform: translateY(-50%);
+        &.prev-slide {
+          left: 15px;
+          width: 30px;
+          @include media("medium") {
+            width: initial;
+          }
+          @include media("large") {
+            left: 15%;
+          }
+        }
+        &.next-slide {
+          right: 15px;
+          width: 30px;
+          @include media("medium") {
+            width: initial;
+          }
+          @include media("large") {
+            right: 15%;
+          }
+        }
+      }
+    }
+    .slider-subscribe {
+      margin-bottom: 32px;
+      .slick-slide {
+        display: flex;
+        align-items: flex-end;
+        img {
+          transform: scale(0.9);
+          overflow: hidden;
+          border-radius: 6px;
+          &.focus-template {
+            border: 2px solid $bgbutton;
+          }
+        }
+      }
+    }
+    .subscribe-form {
+      .row-bg_custom {
+        position: relative;
+        padding-top: 32px;
+        padding-bottom: 24px;
+        border-radius: 6px;
+        overflow: hidden;
+        &:before {
+          @include media("large") {
+            content: "";
+            position: absolute;
+            width: 14%;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            background: -moz-linear-gradient(
+              left,
+              rgba(0, 0, 0, 1) 0%,
+              rgba(0, 0, 0, 0) 99%
+            ); /* FF3.6-15 */
+            background: -webkit-linear-gradient(
+              left,
+              rgba(0, 0, 0, 1) 0%,
+              rgba(0, 0, 0, 0) 99%
+            ); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(
+              to right,
+              rgba(0, 0, 0, 1) 0%,
+              rgba(0, 0, 0, 0) 99%
+            ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+            z-index: 2;
+          }
+        }
+        &:after {
+          @include media("large") {
+            content: "";
+            position: absolute;
+            width: 14%;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: -moz-linear-gradient(
+              left,
+              rgba(0, 0, 0, 0) 0%,
+              rgba(0, 0, 0, 0.99) 99%,
+              rgba(0, 0, 0, 1) 100%
+            ); /* FF3.6-15 */
+            background: -webkit-linear-gradient(
+              left,
+              rgba(0, 0, 0, 0) 0%,
+              rgba(0, 0, 0, 0.99) 99%,
+              rgba(0, 0, 0, 1) 100%
+            ); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(
+              to right,
+              rgba(0, 0, 0, 0) 0%,
+              rgba(0, 0, 0, 0.99) 99%,
+              rgba(0, 0, 0, 1) 100%
+            ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
+          }
+        }
+        .subscribe-list {
+          margin-bottom: 16px;
+        }
+        .subscribe-submit_home {
+          background-color: $bgbutton;
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+    .template-item {
+      display: none;
+      &.current-item {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 1);
+        z-index: 99999;
+        justify-content: center;
+        align-items: center;
+        display: block;
+        overflow-y: auto;
+      }
+      .template-body {
+        .row {
+          margin-left: initial !important;
+          margin-right: initial !important;
+        }
+      }
+    }
+    .fixed-form {
+      position: fixed;
+      z-index: 2;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding-top: 20px;
+      /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.03+0,0.5+3,0.6+11,0.65+28,0.7+44,1+89 */
+      background: -moz-linear-gradient(
+        top,
+        rgba(0, 0, 0, 0.03) 0%,
+        rgba(0, 0, 0, 0.5) 3%,
+        rgba(0, 0, 0, 0.6) 11%,
+        rgba(0, 0, 0, 0.65) 28%,
+        rgba(0, 0, 0, 0.7) 44%,
+        rgba(0, 0, 0, 1) 89%,
+        rgba(0, 0, 0, 1) 100%
+      ); /* FF3.6-15 */
+      background: -webkit-linear-gradient(
+        top,
+        rgba(0, 0, 0, 0.03) 0%,
+        rgba(0, 0, 0, 0.5) 3%,
+        rgba(0, 0, 0, 0.6) 11%,
+        rgba(0, 0, 0, 0.65) 28%,
+        rgba(0, 0, 0, 0.7) 44%,
+        rgba(0, 0, 0, 1) 89%,
+        rgba(0, 0, 0, 1) 100%
+      ); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.03) 0%,
+        rgba(0, 0, 0, 0.5) 3%,
+        rgba(0, 0, 0, 0.6) 11%,
+        rgba(0, 0, 0, 0.65) 28%,
+        rgba(0, 0, 0, 0.7) 44%,
+        rgba(0, 0, 0, 1) 89%,
+        rgba(0, 0, 0, 1) 100%
+      ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#08000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+      @include media("medium") {
+        padding-bottom: 40px;
+      }
+      &.subscribe-form {
+        padding-bottom: 20px;
+        @include media("medium") {
+          padding-bottom: 40px;
+        }
+        @include media("xlarge") {
+          padding-bottom: 70px;
+        }
+        .subscribe-submit_home {
+          background-color: $bgbutton;
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
+      .subscribe-submit_home {
+        padding: 12px;
+        background-color: transparent;
+        color: #fff;
+        border-radius: 6px;
+        border: 1px solid $bgbutton;
+        transition: 0.3s;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 17px;
+        @include media("large") {
+          padding: 14px 24px;
+          font-size: 16px;
+          line-height: 18px;
+        }
+        &:hover {
+          background-color: $bgbuttonhover;
+        }
+      }
+    }
+    .template-wrapp {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      position: relative;
+
+      .subscribe-form {
+        .title-block {
+          margin-bottom: 8px;
+        }
+        .subscribe-list {
+          margin-bottom: 32px;
+          li {
+            flex-direction: row;
+            line-height: 20px;
+            color: #ffffff;
+          }
+        }
+        .subscribe-form_home {
+          input {
+            margin-bottom: 8px;
+            @include media("large") {
+              margin-bottom: 16px;
+            }
+          }
+        }
+      }
+      .template-close {
+        position: absolute;
+        right: 6px;
+        top: 6px;
+        color: #000;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 24px;
+        &:hover {
+          opacity: 0.7;
+        }
+        @include media("medium") {
+          right: 20px;
+          top: 20px;
+        }
+      }
+      .subscribe-list {
+        margin-bottom: 12px;
+        display: flex;
+        justify-content: space-around;
+        @include media("small") {
+          margin-bottom: 32px;
+          justify-content: center;
+        }
+        li {
+          font-size: 16px;
+          line-height: 24px;
+          color: #ffffff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 12px;
+          text-align: center;
+          @include media("small") {
+            margin-left: 24px;
+            margin-bottom: 0;
+          }
+          @include media("large") {
+            margin-left: 48px;
+          }
+          span {
+            font-size: 24px;
+            line-height: 24px;
+            vertical-align: middle;
+            color: $bgbutton;
+            margin-left: 8px;
+          }
+        }
+      }
+      .title-block {
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 28px;
+        color: #ffffff;
+        @include media("large") {
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 900;
+          line-height: 38px;
+        }
+      }
+    }
+
+    .subscribe-submit_home {
+      background-color: $bgbutton;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+
+    .subscribe-form {
+      .row-bg_custom {
+        background: linear-gradient(129.96deg, #ff2f2f 10.43%, #000460 92.78%),
+          radial-gradient(100% 246.94% at 100% 0%, #ffffff 0%, #020063 100%),
+          linear-gradient(58.72deg, #2200f2 0%, #530000 100%),
+          linear-gradient(154.03deg, #b70000 0%, #ff003d 74.04%),
+          linear-gradient(341.1deg, #ff0000 7.52%, #0038ff 77.98%),
+          linear-gradient(136.23deg, #00c2ff 11.12%, #ff0000 86.47%),
+          radial-gradient(57.37% 100% at 50% 0%, #b50000 0%, #0034bb 100%);
+        background-blend-mode: overlay, color-burn, screen, overlay, difference,
+          difference, normal;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        border-radius: 6px;
+        @include media("medium") {
+          padding-top: 48px;
+          padding-bottom: 48px;
+        }
+        @include media("large") {
+          padding-top: 72px;
+          padding-bottom: 72px;
+        }
+      }
+      .title-block {
+        margin-bottom: 24px;
+        color: #fff;
+      }
+      .subscribe-list {
+        margin-bottom: 24px;
+        display: flex;
+        justify-content: space-around;
+        @include media("small") {
+          margin-bottom: 48px;
+          justify-content: center;
+        }
+        li {
+          font-size: 16px;
+          line-height: 24px;
+          color: #d9d9e0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 12px;
+          flex-direction: column;
+          @include media("small") {
+            margin-left: 24px;
+            margin-bottom: 0;
+          }
+          @include media("large") {
+            margin-left: 48px;
+          }
+          span {
+            font-size: 24px;
+            line-height: 24px;
+            vertical-align: middle;
+            color: $bgbutton;
+            margin-left: 8px;
+          }
+        }
+      }
+      .subscribe-form_home {
+        input {
+          padding: 12px;
+          color: #999999;
+          border-radius: 6px;
+          height: auto;
+          border: 1px solid #fff;
+          margin-bottom: 24px;
+          font-size: 15px;
+          line-height: 17px;
+          @include media("large") {
+            padding: 14px 24px;
+            font-size: 16px;
+            line-height: 18px;
+            margin-bottom: 0;
+          }
+          &:focus {
+            box-shadow: 0 0 20px 3px $bgbuttonhover;
+          }
+        }
+        input::placeholder {
+          color: #999999;
+        }
+      }
+    }
+  }
+}
+
+// subscribe-form
+
+// subscribe-form end

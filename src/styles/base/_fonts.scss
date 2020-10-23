@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'TacticSans-Blk';
+    src: url('../fonts/3AEC1A_0_0.eot');
+    src: url('../fonts/3AEC1A_0_0.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/3AEC1A_0_0.woff2') format('woff2'),
+         url('../fonts/3AEC1A_0_0.woff') format('woff'),
+         url('../fonts/3AEC1A_0_0.ttf') format('truetype'),
+         url('../fonts/3AEC1A_0_0.svg#wf') format('svg');
+         font-weight: 600;
+         font-style: normal;
+}
+
+@font-face {
+    src: url('../fonts/font-bold.eot');
+    font-family: 'TacticSans-Bld';
+    src: url('../fonts/font-bold.woff2') format('woff2'), 
+         url('../fonts/font-bold.woff') format('woff'), 
+         url('../fonts/font-bold.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/font-bold.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'TacticSans-Reg';
+    src: url('../fonts/font.woff2') format('woff2'), 
+    url('../fonts/font.woff') format('woff');
+  }
+  

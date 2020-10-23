@@ -1,0 +1,122 @@
+.search-form_result {
+    position: relative;
+    margin-bottom: 24px;
+    @include media('large') {
+        margin-bottom: 48px;
+    }
+    input {
+        border: 1px solid #E5E5E5;
+        color: #666666;
+        width: 100%;
+        padding: 14px 24px;
+        font-size: 16px;
+        line-height: 18px;
+        border-radius: 6px;
+        @include media('medium') {
+            padding-right: 32px;
+        }
+        @include media('large') {
+            padding: 14px 46px  14px 24px;
+        }
+        &:focus{
+            outline: none;
+        }
+    }
+    .search-img {
+        top: 50%;
+        right: 8px;
+        transform: translateY(-50%);
+        color: #0055FF;
+        position: absolute;
+        font-size: 16px;
+        line-height: 24px;
+        transition: .3s;
+        @include media('large') {
+            right: 24px;
+        }
+    }
+}
+
+.search-results_page {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-top: 1px solid #E5E5E5;
+    @include media('large') {
+        padding-top: 72px;
+        padding-bottom: 72px;
+    }
+    .sort-wrapp {
+        margin-bottom: 24px;
+        @include media('large') {
+            margin-bottom: 48px;
+        }
+    }
+    .filter-title {
+        margin-right: 8px;
+        margin-bottom: 0;
+    }
+    .nice-select {
+        max-width: 184px;
+        width: 100%;
+        color: #999999;
+        height: auto;
+        padding: 5px 16px;
+        font-size: 16px;
+        line-height: 18px;
+        border-radius: 6px;
+        display: flex;
+        flex-direction: row-reverse;
+        @include media('large') {
+            line-height: 26px;
+        }
+        .option {
+            line-height: 30px;
+            text-align: right;
+            @include media('large') {
+                line-height: 38px;
+            }
+        }
+        .list {
+            width: 100%;
+        }
+        &:after {
+            right: initial;
+            left: 4px;
+        }
+    }
+    p {
+        color: #4D4D4D;
+        margin-bottom: 12px;
+        @include media('large') {
+            margin-bottom: 24px;  
+        }
+    }
+    .read-more_link {
+        padding: 0;
+        display: inline-block;
+        margin-bottom: 24px; 
+        @include media('large') {
+            margin-bottom: 48px;
+        }
+    }
+    .content-title {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 5px;
+        color: #000000;
+        @include media('large') {
+            font-size: 32px;
+            line-height: 37px;
+        }
+    }
+    .page-pagination_list {
+        li {
+            a {
+                i {
+                    transform: rotate(0);
+                }
+            }
+        }
+    }
+}

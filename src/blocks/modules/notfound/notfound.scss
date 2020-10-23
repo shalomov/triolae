@@ -1,0 +1,67 @@
+.search-results_page {
+    img {
+        margin-bottom: 24px;
+    }
+    .title-notfound {
+        font-size: 18px;
+        line-height: 22px;
+        color: #000000;
+        margin-bottom: 24px;
+        text-align: right;
+        @include media('medium') {
+            margin-bottom: 48px;
+            font-size: 24px;
+            line-height: 28px;
+        }
+    }
+    .to-home , i{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #989898;
+        vertical-align: top;
+        transition: .3s;
+        @include media('medium') {
+            font-size: 24px;
+            line-height: 28px;
+        }
+    }
+    .to-home {
+        display: flex;
+        flex-direction: row-reverse;
+        i {
+            transform: rotate(180deg);
+        }
+        &:hover{
+            color: #0055FF;
+            i {
+                color: #0055FF; 
+            }
+        }
+    }
+
+}
+
+.results-not_found{
+    color: #E2E3E9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    flex-direction: row-reverse;
+    @include media('medium') {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+    .find_replace {
+        font-size: 80px;
+        line-height: 80px;
+        color: #E2E3E9;
+    }
+    h3 {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+    }
+}

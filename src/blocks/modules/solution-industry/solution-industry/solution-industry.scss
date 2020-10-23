@@ -1,0 +1,16 @@
+.main-content {
+    &.solution-industry_page {
+        .block-about {
+            .link-more {
+                background-color: $ak06;
+                &:hover {
+                    background-color: $ak06hover;
+                }
+            }
+        }
+
+    }
+}        
+section#solution-products {
+    padding-top: 72px;
+}

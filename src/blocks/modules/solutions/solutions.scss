@@ -1,0 +1,89 @@
+.solutions-list {
+    .solutions-icon_wrapp {
+        padding: 15px;
+        display: flex;
+        border-radius: 50%;
+        background-color: #f7f9ff;
+        align-self: flex-start;
+        margin-left: 15px;
+        @include media('large') {
+            padding: 23px;
+            margin-left: 24px;
+        }
+        i {
+            font-size: 25px;
+            line-height: 25px;
+            color: $bgbutton;
+            @include media('large') {
+                font-size: 35px;
+                line-height: 35px;
+            }
+        }
+    }
+    .solutions-content_wrapp {
+        p {
+            color: #4D4D4D;
+            margin-bottom: 18px;
+            @include media('medium') {
+                margin-bottom: 24px;  
+            }
+            @include media('large') {
+                margin-bottom: 48px;  
+            }
+        }
+        h4 {
+            text-align: right;
+        }
+    }
+    h3 {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 12px;
+        text-align: right;
+        @include media('large') {
+            margin-bottom: 24px;
+            font-size: 24px;
+            line-height: 32px;
+        }
+    }
+    .solutions-img_wrapp {
+        border-radius: 6px;
+        margin-bottom: 12px;
+        overflow: hidden;
+        max-width: 392px;
+        @include media('large') {
+            margin-bottom: 24px;
+        }
+    }
+    .solutions-item {
+        margin-bottom: 24px;
+        text-align: right;
+        &:hover {
+            .link-more {
+                background-color: $bgbuttonhover;
+                border-color: $bgbuttonhover;
+                color: #fff;
+            }
+        }
+        .link-more {
+            padding: 12px 24px;
+            border: 1px solid $bgbutton;
+            border-radius: 6px;
+            &:hover {
+                background-color: $bgbuttonhover;
+                border-color: $bgbuttonhover;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.main-content {
+    &.solutions-page {
+        padding-bottom: 24px;
+        @include media('large') {
+            padding-bottom: 48px;
+        }
+    }
+}

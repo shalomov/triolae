@@ -1,0 +1,81 @@
+.main-content  {
+    &.faq-page {
+        padding-top: 16px;
+        padding-bottom: 24px;
+        @include media('large') {
+            padding-bottom: 48px;
+        }
+        .faq-list {
+            padding-bottom: 24px;
+            @include media('large') {
+                padding-bottom: 48px;
+            }
+        }
+        .faq-title {
+            padding-bottom: 18px;
+            border-bottom: 1px solid #e6e6e6;
+            padding-top: 18px;
+            @include media('large') {
+                padding-top: 24px;
+                padding-bottom: 24px;
+            }
+            cursor: pointer;
+            h3 {
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 22px;
+                color: #000000;
+                margin-bottom: 0;
+                text-align: right;
+                @include media('large') {
+                    font-size: 24px;
+                    line-height: 28px;
+                }
+            }
+            &.active-faq {
+                border-bottom: transparent;
+                padding-bottom: 18px;
+                & + .faq-content {
+                    display: block;
+                }
+                .position-plus {
+                    transform: rotate(45deg);
+                }
+            }
+            .position-plus {
+                font-size: 30px;
+                line-height: 30px;
+                color: #CCC;
+                @include media('large') {
+                    font-size: 80px;
+                    line-height: 80px; 
+                }
+            }
+        }
+
+        .faq-content {
+            display: none;
+            border-bottom: 1px solid #e6e6e6;
+            padding-bottom: 24px;
+            ul {
+                list-style-type: disc;
+                list-style-position: inside;
+                margin-bottom: 24px;
+                li {
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #4D4D4D;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+        .footer-form {
+            .block-form {
+                background-color: #E7E8EF;
+                .title-block {
+                    color: #000;
+                }
+            }
+        }
+    }
+}

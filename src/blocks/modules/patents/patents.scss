@@ -1,0 +1,194 @@
+.patent-page {
+  padding-bottom: 24px;
+  @include media("medium") {
+    padding-bottom: 72px;
+  }
+}
+
+.tabs-wrapp {
+    margin-bottom: 12px;
+    @include media("medium") {
+      margin-bottom: 48px;
+    }
+    @include media("large") {
+      margin-bottom: 72px;
+    }
+  .patent-tabs {
+    justify-content: center;
+    margin-bottom: 0;
+    li {
+      &:not(:last-child) {
+        margin-right: 0;
+        @include media("medium") {
+          margin-right: 48px;
+        }
+        @include media("large") {
+          margin-right: 72px;
+        }
+      }
+    }
+  }
+}
+.patent-desc {
+  font-family: $custom-bold;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  color: #818181;
+  padding: 6px 12px;
+  background-color: #f7f9ff;
+  display: inline-block;
+  border-radius: 6px;
+  @include media("medium") {
+    margin-bottom: 24px;
+  }
+}
+.patent-tab_content {
+  table {
+    tr {
+      td {
+        border-bottom: 1px solid #e6e6e6;
+        padding-bottom: 24px;
+        padding-top: 12px;
+        @include media("medium") {
+          padding-top: 24px;
+        }
+        @include media("large") {
+          padding-top: 48px;
+        }
+        &:first-child {
+          @include media("medium") {
+            width: 80%;
+          }
+        }
+        &:nth-child(2) {
+          text-align: right;
+          @include media("medium") {
+            width: 20%;
+          }
+        }
+        .patent-title {
+          font-weight: bold;
+          font-size: 20px;
+          line-height: 22px;
+          color: #000000;
+          margin-bottom: 8px;
+          @include media("medium") {
+            margin-bottom: 16px;
+            font-size: 24px;
+            line-height: 28px;
+          }
+        }
+        p {
+          margin-bottom: 8px;
+          @include media("medium") {
+            margin-bottom: 18px;
+          }
+        }
+        ul {
+          list-style-type: disc;
+          list-style: inside;
+          margin-bottom: 8px;
+          li {
+            margin-bottom: 8px;
+            font-size: 16px;
+            line-height: 24px;
+            ul {
+              padding-left: 10px;
+            }
+          }
+        }
+        h4 {
+          margin-bottom: 8px;
+        }
+        .link-more {
+          display: inline-flex;
+          font-size: 16px;
+          line-height: 18px;
+          align-items: center;
+          i {
+            font-size: 12px;
+            margin-left: 6px;
+            line-height: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+.tabs-patents_list {
+  .patents-list_title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 12px;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    @include media("extra") {
+      flex-direction: row;
+    }
+    @include media("medium") {
+      margin-bottom: 24px;
+    }
+    a {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 26px;
+        color: $bgbutton;
+        display: flex;
+        align-items: center;
+        span {
+            margin-left: 5px;
+            line-height: 32px;
+        }
+    }
+  }
+  .patents-list_products {
+      display: flex;
+      flex-direction: column;
+      li {
+          font-weight: 500;
+          background-color: #e6eeff;
+          padding: 8px 24px;
+          cursor: pointer;
+          border-radius: 4px;
+          border: 1px solid #e6eeff;
+          margin-bottom: 8px;
+          @include media("medium") {
+            padding: 8px 46px;
+            margin-bottom: 16px;
+          }
+          &.active-patent_product {
+            border-color: $bgbutton;
+            color: $bgbutton;
+          }
+      }
+  }
+  .patents-list {
+      list-style-type: disc;
+      padding-left: 15px;
+      .patents-items {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        color: #000000;
+        margin-bottom: 5px;
+        @include media("medium") {
+          font-size: 20px;
+          line-height: 32px;
+        }
+      }
+  }
+  .content-patents_item {
+      display: none;
+      &.active-patent_product {
+          display: block;
+      }
+  }
+}

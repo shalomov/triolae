@@ -1,0 +1,70 @@
+.main-content {
+    &.solution-oilgas_page {
+        .block-about {
+            .link-more {
+                background-color: $ak06;
+                &:hover {
+                    background-color: $ak06hover;
+                }
+            }
+        }
+        .bottom-form {
+            .footer-form_btn {
+                background-color: $ak06;
+                &:hover {
+                    background-color: $ak06hover;
+                }
+            }
+        }
+        .solution-subtitle {
+            @include media('large') {
+                max-width: 392px;
+            }
+        }
+    }
+    &.solution-oilgas_page ,
+    &.solution-general_page {
+        background-color: #F8F9FC;
+        .wrapp-desc_solution {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 12px;
+            border-radius: 6px;
+            color: #000;
+            text-align: right;
+            @include media('medium') {
+                padding: 24px;
+            }
+            @include media('large') {
+                padding: 48px;
+            }
+            p {
+                color: #343434;
+            }
+        }
+        .solution-products {
+            padding-top: 24px;
+            @include media('medium') {
+                padding-top: 48px;
+            }
+            @include media('large') {
+                padding-top: 72px;
+            }
+        }
+        .title-block {
+            color: #000;
+            margin-bottom: 12px;
+            text-align: right;
+            @include media('large') {
+                margin-bottom: 24px; 
+            }
+        }
+        .solution-subtitle {
+            color: #4D4D4D;
+            font-weight: normal;
+            margin-bottom: 24px;
+            @include media('medium') {
+                margin-bottom: 48px;
+            }
+        }
+    }
+}

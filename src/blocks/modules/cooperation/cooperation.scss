@@ -1,0 +1,29 @@
+.main-content {
+    &.cooperation {
+        .coop-offer {
+            background-color: #F8F9FC;
+            padding-top: 24px;
+            padding-bottom: 24px;
+            @include media('medium') {
+                padding-top: 48px;
+                padding-bottom: 48px;
+            }
+            @include media('large') {
+                padding-top: 72px;
+                padding-bottom: 72px;
+            }
+        }
+        .coop-item {
+            text-align: right;
+            img {
+                margin-bottom: 16px;
+            }
+            h4 {
+                margin-bottom: 8px;
+            }
+        }
+        .attach-resume {
+            margin-top: 24px;
+        }
+    }
+}

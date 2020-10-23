@@ -1,0 +1,25 @@
+.main-content {
+    &.solution-general_page{
+        .block-about {
+            .link-more {
+                background-color: $at24;
+                &:hover {
+                    background-color: $at24hover;
+                }
+            }
+        }
+        .bottom-form {
+            .footer-form_btn {
+                background-color: $at24;
+                &:hover {
+                    background-color: $at24hover;
+                }
+            }
+        }
+        .solution-subtitle {
+            @include media('large') {
+                max-width: 808px;
+            }
+        }
+    }
+}
