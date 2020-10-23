@@ -59,6 +59,7 @@
         position: relative;
         font-size: 20px;
         line-height: 22px;
+        text-align: right;
         @include media('large') {
             padding-top: 16px;
             font-size: 24px;
@@ -78,6 +79,7 @@
         color: #E5E5E5;
         font-weight: normal;
         margin-bottom: 15px;
+        text-align: right;
         @include media('large') {
             margin-bottom: 48px;
             line-height: 26px;

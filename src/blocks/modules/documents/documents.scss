@@ -21,15 +21,6 @@
             padding-bottom: 40px;
         }
     }
-    .page-pagination_list {
-        li {
-            a {
-                i {
-                    transform: rotate(0);
-                }
-            }
-        }
-    }
 }
 
 
@@ -370,7 +361,7 @@
             i {
                 font-size: 14px;
                 line-height: 20px;
-                transform: rotate(180deg);
+
                 @include media('large') {
                     font-size: 16px;
                     line-height: 26px;

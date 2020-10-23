@@ -139,7 +139,7 @@
   .share {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
     flex-direction: row-reverse;
     @include media("large") {
@@ -775,6 +775,9 @@
           opacity: 0.7;
         }
       }
+    }
+    .subscribe-form_home {
+      padding-right: 24px;
     }
   }
   .more-news {

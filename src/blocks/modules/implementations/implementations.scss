@@ -137,11 +137,11 @@
                         margin-top: 5px;
                         align-self: flex-start;
                         text-align: center;
-                        margin-right: 5px;
+                        margin-left: 5px;
                         flex: 0 0 auto;
                         @include media('small') {
-                            margin-left: 12px;
-                            margin-right: 0;
+                            margin-right: 12px;
+                            margin-left: 0;
                         }
                         @include media('large') {
                             margin-left: 24px;
@@ -253,7 +253,7 @@
                         border-color: #fff;
                         margin-bottom: 8px;
                         @include media('medium') {
-                            margin-right: 24px;
+                            margin-left: 24px;
                             margin-bottom: 0;
                         }
                         &:hover {
