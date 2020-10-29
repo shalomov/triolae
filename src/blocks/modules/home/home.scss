@@ -131,6 +131,7 @@
             display: inline-block;
             padding: 12px 20px;
             transition: .3s;
+            margin-left: 8px;
             @include media('medium') {
                 padding: 12px 24px;
             }
